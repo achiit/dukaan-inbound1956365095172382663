@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>जया स्टील सेंटर | Jaya Steel Center – नवीनगर, औरंगाबाद (बिहार)</title>
+<meta name="description" content="स्टील, पीतल एवं शादी के सभी प्रकार के पारंपरिक बर्तनों का विश्वसनीय प्रतिष्ठान। 2002 से नवीनगर, औरंगाबाद (बिहार) में।">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+<style>
+:root{
+  --steel:#E9EDF0; --steel-dark:#C9D1D7; --ink:#1B2229; --muted:#55616B;
+  --brass:#B07D1F; --brass-light:#E3B954; --maroon:#6A1B2B; --white:#FFFFFF;
+  --head:'Tiro Devanagari Hindi','Noto Serif Devanagari',Georgia,serif;
+  --body:'Hind','Noto Sans Devanagari',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--steel);line-height:1.7;font-size:17px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--brass);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:var(--head);font-weight:400;line-height:1.3}
+
+/* header */
+header{background:var(--ink);color:var(--white);position:sticky;top:0;z-index:10}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 20px;max-width:1080px;margin:0 auto;flex-wrap:wrap}
+.logo{font-family:var(--head);font-size:1.3rem;text-decoration:none;color:var(--brass-light)}
+nav a{color:#DDE3E8;text-decoration:none;margin-left:18px;font-size:.95rem}
+nav a:hover{color:var(--brass-light)}
+
+/* hero */
+.hero{background:linear-gradient(135deg,#1B2229 0%,#2B353E 55%,#3A4650 100%);color:var(--white);padding:72px 0 80px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-90px;top:-90px;width:380px;height:380px;border-radius:50%;
+  background:radial-gradient(circle at 35% 30%,#F5DFA0,var(--brass) 55%,#6E4B0C);opacity:.9}
+.hero .wrap{position:relative;z-index:1}
+.hero h1{font-size:clamp(2.2rem,6vw,3.8rem);max-width:640px}
+.hero p.tag{font-size:1.2rem;color:var(--brass-light);margin:10px 0 18px;font-family:var(--head)}
+.hero p.lead{max-width:520px;color:#D5DCE2}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;padding:12px 24px;border-radius:6px;text-decoration:none;font-weight:600}
+.btn-brass{background:var(--brass-light);color:var(--ink)}
+.btn-line{border:2px solid var(--brass-light);color:var(--brass-light)}
+.since{display:inline-block;margin-top:34px;border-left:4px solid var(--brass-light);padding-left:14px;color:#D5DCE2}
+.since b{display:block;font-size:1.6rem;color:var(--white);font-family:var(--head);font-weight:400}
+
+/* sections */
+section{padding:64px 0}
+.sec-title{font-size:clamp(1.7rem,4vw,2.3rem);color:var(--maroon);margin-bottom:8px}
+.sec-sub{color:var(--muted);max-width:560px;margin-bottom:34px}
+
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px}
+.card{background:var(--white);padding:26px;border-top:5px solid var(--brass);border-radius:4px}
+.card:nth-child(2){border-top-color:var(--steel-dark)}
+.card:nth-child(3){border-top-color:var(--maroon)}
+.card h3{font-size:1.35rem;margin-bottom:8px}
+.card p{color:var(--muted);font-size:.98rem}
+.card ul{margin:12px 0 0 18px;font-size:.98rem}
+
+.about{background:var(--white)}
+.about-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px;align-items:start}
+.about p+p{margin-top:12px}
+.points{list-style:none}
+.points li{padding:14px 0 14px 18px;border-bottom:1px solid var(--steel-dark);border-left:4px solid var(--brass);margin-bottom:10px;background:var(--steel);padding-left:16px}
+.points b{display:block;font-family:var(--head);font-weight:400;font-size:1.1rem}
+
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:30px}
+.info{background:var(--ink);color:#DDE3E8;padding:30px;border-radius:4px}
+.info h3{color:var(--brass-light);margin-bottom:14px}
+.info dt{color:var(--brass-light);font-size:.9rem;margin-top:12px}
+.info dd a{text-decoration:none;border-bottom:1px solid #55616B}
+.info dd a:hover{color:var(--brass-light)}
+.social{display:flex;flex-direction:column;gap:12px}
+.social a{display:block;background:var(--white);padding:16px 20px;border-left:5px solid var(--maroon);text-decoration:none;border-radius:4px}
+.social a:hover{border-left-color:var(--brass)}
+.social small{display:block;color:var(--muted)}
+
+footer{background:var(--ink);color:#9AA6AF;text-align:center;padding:22px 20px;font-size:.92rem}
+
+.wa{position:fixed;right:16px;bottom:16px;background:#1F9D55;color:#fff;padding:12px 18px;border-radius:30px;text-decoration:none;font-weight:600;z-index:20;box-shadow:0 3px 10px rgba(0,0,0,.3)}
+
+@media(max-width:600px){nav a{margin:0 12px 0 0}.hero{padding:48px 0 56px}.hero::after{width:220px;height:220px;right:-80px;top:-80px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <a class="logo" href="#top">जया स्टील सेंटर</a>
+    <nav aria-label="मुख्य मेनू">
+      <a href="#products">हमारे उत्पाद</a>
+      <a href="#about">हमारे बारे में</a>
+      <a href="#contact">संपर्क</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <h1>JAYA STEEL CENTER</h1>
+      <p class="tag">विश्वास और गुणवत्ता का प्रतीक</p>
+      <p class="lead">स्टील, पीतल एवं शादी के सभी प्रकार के पारंपरिक बर्तनों का विश्वसनीय प्रतिष्ठान।</p>
+      <div class="btns">
+        <a class="btn btn-brass" href="tel:+919279509946">अभी कॉल करें</a>
+        <a class="btn btn-line" href="#contact">दुकान का पता देखें</a>
+      </div>
+      <p class="since"><b>2002 से</b>नवीनगर, औरंगाबाद (बिहार)</p>
+    </div>
+  </div>
+
+  <section id="products">
+    <div class="wrap">
+      <h2 class="sec-title">हमारे उत्पाद</h2>
+      <p class="sec-sub">रोज़ के इस्तेमाल से लेकर शादी-ब्याह तक, हर मौके के बर्तन एक ही जगह।</p>
+      <div class="products">
+        <article class="card">
+          <h3>स्टील के बर्तन</h3>
+          <p>रसोई और घर के रोज़मर्रा के काम के लिए टिकाऊ बर्तन।</p>
+          <ul><li>थाली, कटोरी, गिलास</li><li>कुकर, कड़ाही, पतीला</li><li>डिब्बे और टिफिन</li></ul>
+        </article>
+        <article class="card">
+          <h3>पीतल के बर्तन</h3>
+          <p>पूजा और परंपरा से जुड़े पीतल के बर्तन और सामान।</p>
+          <ul><li>पूजा के बर्तन</li><li>लोटा, गगरा, हंडा</li><li>सजावटी पीतल सामान</li></ul>
+        </article>
+        <article class="card">
+          <h3>शादी के पारंपरिक बर्तन</h3>
+          <p>विवाह और उपहार के लिए पारंपरिक बर्तनों के पूरे सेट।</p>
+          <ul><li>दहेज़ और उपहार सेट</li><li>बड़े भोज के बर्तन</li><li>पारंपरिक सजावट के बर्तन</li></ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="wrap about-grid">
+      <div>
+        <h2 class="sec-title">हमारे बारे में</h2>
+        <p>जया स्टील सेंटर की शुरुआत 2002 में नवीनगर में हुई। तब से हम इलाके के परिवारों को भरोसेमंद बर्तन उपलब्ध करा रहे हैं।</p>
+        <p>चाहे नया घर बसाना हो या बेटी की शादी की तैयारी, हम आपकी ज़रूरत के हिसाब से सही बर्तन चुनने में मदद करते हैं।</p>
+      </div>
+      <ul class="points">
+        <li><b>विश्वास</b>सालों से ग्राहकों का साथ।</li>
+        <li><b>गुणवत्ता</b>टिकाऊ स्टील और असली पीतल पर ज़ोर।</li>
+        <li><b>एक ही छत के नीचे</b>रोज़ के बर्तन से शादी के सेट तक।</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <h2 class="sec-title">संपर्क करें</h2>
+      <p class="sec-sub">दुकान पर आइए या फ़ोन करके अपनी ज़रूरत बताइए।</p>
+      <div class="contact-grid">
+        <div class="info">
+          <h3>Jaya Steel Center</h3>
+          <dl>
+            <dt>पता</dt>
+            <dd>न्यू एरिया, शिव मंदिर के सामने, नवीनगर, औरंगाबाद (बिहार)</dd>
+            <dt>मोबाइल</dt>
+            <dd><a href="tel:+919279509946">9279509946</a></dd>
+            <dt>ईमेल</dt>
+            <dd><a href="mailto:jayasteelcenter@gmail.com">jayasteelcenter@gmail.com</a></dd>
+            <dt>स्थापना</dt>
+            <dd>2002</dd>
+          </dl>
+        </div>
+        <div class="social">
+          <a href="https://www.instagram.com/jaya_steel_center" target="_blank" rel="noopener"><small>Instagram</small>@jaya_steel_center</a>
+          <a href="https://www.facebook.com/search/top?q=Jaya%20Steel%20Center" target="_blank" rel="noopener"><small>Facebook</small>Jaya Steel Center</a>
+          <a href="https://www.youtube.com/results?search_query=Jaya+Steel+Center" target="_blank" rel="noopener"><small>YouTube</small>Jaya Steel Center</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© 2002–<span id="yr">2026</span> जया स्टील सेंटर, नवीनगर, औरंगाबाद (बिहार)। सर्वाधिकार सुरक्षित।</footer>
+
+<a class="wa" href="https://wa.me/919279509946" target="_blank" rel="noopener">WhatsApp करें</a>
+
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
